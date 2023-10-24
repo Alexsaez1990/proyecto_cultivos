@@ -22,14 +22,19 @@ Análisis y preparación de los datos para el proceso de modelado
 - Validación_muestras_deepglobe.ipynb
 - DeepGlobe_TilesGeneration.ipynb
 - Labeling_images_DeepGlobe.ipynb
+
 Exploración y análisis
 - EDA_DeepGlobe_128.ipynb
+
 Pre-procesado
 - Preprocess_Transformers_DeepGlobe_128.ipynb
+
 Modelo multiclase de clasificación
 - Multiclass_Model_Transformers_DeepGlobe_128.ipynb
+
 Modelo binario de clasificación
 - Binary_Classification_Transformers_DeepGlobe-128.ipynb
+
 Modelo binario de segmentación
 - Binary_Segmentation_128.ipynb
 
