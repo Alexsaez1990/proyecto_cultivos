@@ -12,3 +12,11 @@ A partir de esta idea central, surgen diferentes posibilidades para una tarea qu
 Se opta por la realización de un modelo binario, con la idea de centrarse en la calidad de la identificación de cultivos, aunque no se descarta realizar pruebas de modelado multiclase.
 En ambos casos se deberá entrenar en una primera fase un modelo que diferencie los tipos de suelo y, en una segunda etapa se deberá diferenciar aquellos cultivos secos de los verdes. 
 Se debe dejar claro, que, debido a la limitación de los tiempos para la primera iteración del proyecto, el objetivo es entregar un prototipo funcional y que, tras ello, quedará mucho trabajo por delante de mejora de los modelos  y desarrollo del  producto en general.
+
+Los archivos .ipynb corresponden al proceso de selección, EDA, etiquetado y modelado según los diferentes modelos entrenados.
+La carpeta app contiene los ficheros correspondientes a la web app desarrollada para aplicar el modelo binario de clasificación sobre mapa.
+El pdf Documento_Proyecto_Cultivos.pdf contiene toda la información acerca del desarrollo de la pimera iteración y maqueta básica de este proyecto.
+
+Se adjuntan además los siguientes links a youtube en los que se muestran tres demos de la maqueta con diferentes niveles de zoom:
+
+
