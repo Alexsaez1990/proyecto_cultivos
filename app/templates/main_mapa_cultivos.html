@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+                integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+                crossorigin=""/>
+
+                <!-- Make sure you put this AFTER Leaflet's CSS -->
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+                integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+                crossorigin="">
+            </script>
+            <script src="{{ url_for('static', filename='Proj4Leaflet-master/lib/proj4-compressed.js') }}"></script>
+            <script src="{{ url_for('static', filename='Proj4Leaflet-master/src/proj4leaflet.js') }}"></script>
+            <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+            <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+            <!--<script src="L.Map.Sync.js"></script> -->
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"   
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   
+            crossorigin="anonymous"></script>
+            <script type="text/javascript" src="{{ url_for('static', filename='dist/leaflet.ajax.js') }}"></script>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main_mapa_cultivos.css') }}">
+            <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+            
+
+        <title>Visor cultivos</title>
+    </head>
+    <body>
+        <div id="contenido">
+            <div id="mapas">
+                <div id="mapa1">
+                </div>
+            </div>
+            <nav class="main-navigation" id="main-navigation">
+                <div class="nav-links">
+                    <ul>
+                        <!--<div id="menu_movil" class="menu">
+                            <div id="logo_movil" class="logo">
+                                <img id="img_movil" class="img" src="../img/logo_conaf.png"/>
+                            </div>-->
+                        </div>
+                    <span></span>
+                    </ul>
+                </div>
+            </nav>
+            <div id="menu" class="menu">
+                <div id="logo" class="logo">
+                    <img id="img" class="img" src="{{ url_for('static', filename='img/logo_conaf.png') }}">
+                </div>   
+            </div>
+            <div id="leyenda" class="leyenda">
+                <div class="leyenda-item">
+                    <div class="leyenda-color" style="background-color: rgb(255, 255, 0);"></div>
+                    <div class="leyendaTexto">Dry crop</div>
+                </div>
+                <div class="leyenda-item">
+                    <div class="leyenda-color" style="background-color: rgb(0, 128, 0);"></div>
+                    <div class="leyendaTexto">Green crop</div>
+                </div>
+                <div class="leyenda-item">
+                    <div class="leyenda-color" style="background-color: rgb(128, 128, 128);"></div>
+                    <div class="leyendaTexto">No crop</div>
+                </div>
+            </div>  
+        </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='main_mapa_cultivos.js') }}"></script>
+    </body>
+</html>
