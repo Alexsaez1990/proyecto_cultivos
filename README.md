@@ -22,7 +22,7 @@ Análisis y preparación de los datos para el proceso de modelado
 - Validación_muestras_deepglobe.ipynb
 - DeepGlobe_TilesGeneration.ipynb
 - Labeling_images_DeepGlobe.ipynb
-
+ 
 Exploración y análisis
 - EDA_DeepGlobe_128.ipynb
 
